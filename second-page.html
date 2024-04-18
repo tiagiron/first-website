@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <title>Africa Trip</title>
+</head>
+<body>
+    <nav>
+        <a href="africa-interest.html" class="nav-link">Home</a>
+        <a href="second-page.html" class="nav-link">Interest Form</a>
+        <a href="third-page.html" class="nav-link">Resources</a>
+        <a href="fourth-page.html" class="nav-link">Inspo</a>
+    </nav>
+
+    <h1>
+        Interest Form
+    </h1>
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+            <div>
+                <label for="name" class="label">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="interest">Do you want to go to Africa?</label><br>
+                <div class="boxes">
+                    <input type="checkbox" id="interest" name="interest">
+                    <label for="yes">Yes</label>
+                </div>
+
+                <div class="boxes">
+                    <input type="checkbox" id="no" name="no">
+                    <label for="no">No</label>
+                </div>
+
+                <div class="boxes">
+                    <input type="checkbox" id="maybe" name="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="preference">What is your preferred country (or countries) to visit?</label><br>
+                <input type="text" id="preference" name="preference">
+            </div>
+
+            <div>
+                <label for="notes">Why do/don't you want to go? Any other comments:</label><br>
+                <textarea id="notes" rows="3" cols="50"></textarea>
+            </div>
+            
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
